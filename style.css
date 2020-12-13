@@ -108,6 +108,12 @@ section .title::after{
     align-items: center;
     justify-content: space-between;
 }
+
+.navbar .logo {
+    border: 1px solid #999999;
+    padding: 1px 7px; 
+    border-radius: 20px;
+}
 .navbar .logo a{
     color: #12418a;
     font-size: 35px;
@@ -274,7 +280,7 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams{
+.services{
     color: var(--div-titles-color);
     background: var(--div-background-color);
 }
@@ -321,7 +327,7 @@ section .title::after{
 }
 
 /* skills section styling */
-
+/* 
 .skills .title::after{
     content: "what i know";
 }
@@ -393,7 +399,7 @@ section .title::after{
 }
 .skills-content .right .mysql::before{
     width: 70%;
-}
+} */
 
 /* testimonials section styling */
 .teams .title::after{
@@ -459,6 +465,9 @@ section .title::after{
 }
 
 /* contact section styling */
+.contact {
+    background: var(--div-background-color);
+}
 .contact .title::after{
     content: "Get in touch";
 }
