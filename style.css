@@ -433,10 +433,11 @@ section .title::after{
 }
 .teams .carousel .card img{
     height: 150px;
-    width: 150px;
+    width: 300px;
+    background-color: var(--btn-color);
     object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid var(--btn-color);
+    border-radius: 2%;
+    border: 1px solid var(--btn-color);
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
