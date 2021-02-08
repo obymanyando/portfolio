@@ -81,4 +81,39 @@ $(document).ready(function () {
 			},
 		},
 	})
+
+	//Contact form
+	const submitForm = (e) => {
+		e.preventDefault()
+
+		//Get input values
+		let name = document.querySelector('#name').value
+		let email = document.querySelector('#email').value
+		let subject = document.querySelector('#subject').value
+		let message = document.querySelector('#message').value
+		console.log(subject)
+		document.querySelector('.contact-form').reset()
+
+		sendEmail(name, email, subject, message)
+	}
+
+	//Send email
+	const sendEmail = (name, email, subject, message) => {
+		Email.send({
+			Host: 'smtp.gmail.com',
+			Username: 'oby.manyando@gmail.com',
+			Password: 'bvthljwndteynbat',
+			To: 'oby.manyando@gmail.com',
+			From: 'oby.manyando@gmail.com',
+			Subject: `${subject}`,
+			Body: `Name: 📛${name} <br/> Email: 📧${email} <br/> Message: 🗃${message} <br/>`,
+		}).then((message) => alert('Message sent successfully'))
+	}
+
+	//Listen for submit
+
+	let subsub = document
+		.querySelector('.contact-form')
+		.addEventListener('submit', submitForm)
+	console.log(subsub)
 })
