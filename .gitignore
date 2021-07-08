@@ -1,3 +1,7 @@
 .ENV
 /.ENV
 /cv
+.cv
+./cv
+./Oby-CV-Dev.pdf
+./cv/Oby-CV-Dev.pdf
