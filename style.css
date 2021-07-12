@@ -65,8 +65,9 @@ section .title{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     padding-bottom: 20px;
+    padding-top: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
 section .title::before{
@@ -292,13 +293,13 @@ section .title::after{
 }
 .services .title::before,
 .teams .title::before{
-    background: #fff;
+    background: #135486;
 }
-.services .title::after,
+/* .services .title::after,
 .teams .title::after{
     background: #fff;
     content: "What I offer";
-}
+} */
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: var(--cards-background);
@@ -337,9 +338,9 @@ section .title::after{
     text-decoration-line: underline;
 }
 
-.teams .title::after{
-    content: "Who I've worked with";
-}
+/* .teams .title::after{
+    content: "What I have done"; 
+} */
 .teams .carousel .card{
     background: var(--cards-background);
     border-radius: 6px;
