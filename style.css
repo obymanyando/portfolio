@@ -247,6 +247,7 @@ section .title::after{
 }
 .about .about-content .left{
     width: 45%;
+    margin-bottom: 20px;
 }
 .about .about-content .left img{
     height: 400px;
@@ -295,17 +296,14 @@ section .title::after{
 .teams .title::before{
     background: #135486;
 }
-/* .services .title::after,
-.teams .title::after{
-    background: #fff;
-    content: "What I offer";
-} */
+
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: var(--cards-background);
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
+    margin-bottom: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -381,6 +379,9 @@ section .title::after{
 .teams .carousel .card:hover img{
     border-color: #fff;
 }
+.owl-carousel {
+    margin-bottom: 30px;
+}
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -417,6 +418,12 @@ section .title::after{
     font-weight: 600;
     margin-bottom: 10px;
 }
+
+.typeform-widget {
+    margin-bottom: 30px;
+}
+/* 
+//below contact section was replaced by TypeForm but keeping it here for future use
 .contact .contact-content .left p{
     text-align: justify;
 }
@@ -440,24 +447,24 @@ section .title::after{
 }
 .contact .contact-content .info .sub-title{
     color: #333;
-}
+} */
 
 .contact .contact-content .far-right{
     width: 45%;
 }
 
 /* footer section styling */
-footer{
+.footer{
     background: #111;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
 }
-footer span a{
+.footer span a{
     color: crimson;
     text-decoration: none;
 }
-footer span a:hover{
+.footer span a:hover{
     text-decoration: underline;
 }
 
@@ -513,6 +520,8 @@ footer span a:hover{
     }
     .home .home-content .text-2{
         font-size: 70px;
+       background-size: cover;
+        background-attachment: fixed;
     }
     .home .home-content .text-3{
         font-size: 35px;
@@ -539,10 +548,12 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
+    }
+    .typeform-widget{
+        width: 100%;
     }
 }
 
@@ -552,6 +563,8 @@ footer span a:hover{
     }
     .home .home-content .text-2{
         font-size: 60px;
+        background-size: cover;
+    background-attachment: fixed;
     }
     .home .home-content .text-3{
         font-size: 32px;
@@ -562,6 +575,10 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%;
     }
+    .typeform-widget{
+        width: 100%;
+    }
+    
 }
 
 @media (max-width: 500px) {
@@ -571,16 +588,11 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
-    .about .about-content .right .text,
-    .skills .skills-content .left .text{
+    .about .about-content .right .text{
         font-size: 19px;
     }
-    .contact .right form .fields{
-        flex-direction: column;
-    }
-    .contact .right form .name,
-    .contact .right form .email{
-        margin: 0;
+    .typeform-widget{
+        width: 100%;
     }
     .scroll-up-btn{
         right: 15px;
